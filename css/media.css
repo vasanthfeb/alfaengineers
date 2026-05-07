@@ -1,0 +1,137 @@
+@media only screen and (max-width: 768px) {
+  .img_29{
+    display: none !important;
+  }
+
+.hero-title{
+  line-height: 40px !important;
+}
+
+.caps{
+  font-size: 37px !important;
+  word-spacing: 7px;
+}
+
+/* .l_logo{
+  max-height:60px !important;
+} */
+
+.alfa-header .navbar-brand img{
+  width: 265px !important;
+}
+.cards{
+  padding-bottom: 50px !important;
+}
+.footer-section{
+  padding: 0px 15px;
+}
+.main-img img{
+  height: 250px !important;
+}
+.nav-link{
+  margin-bottom: 7px;
+}
+
+body{
+  overflow-x: hidden !important;
+}
+
+.hyd-card{
+  margin-bottom: 30px !important;
+}
+main{
+  margin-top: 80px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}
+
+
+
+
+
+@media (max-width: 991.98px) {
+
+  /* FIX HEADER HEIGHT JUMP */
+  .navbar {
+    position: relative;
+  }
+
+  /* TOP ROW FIX (logo + toggle stable) */
+  .navbar .container-fluid {
+    align-items: center;
+  }
+
+  /* TOGGLE BUTTON FIX POSITION */
+  .navbar-toggler {
+    position: relative;
+    z-index: 999;
+  }
+
+  /* IMPORTANT FIX 🔥 */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 998;
+
+    margin: 10 !important; /* remove push */
+  }
+
+} 
+@media (max-width: 991.98px) {
+
+  .navbar-collapse {
+    position: absolute;
+    top: calc(100% + 12px); /* top gap */
+    
+    left: 10px;             /* left gap */
+    width: calc(100% - 20px); /* right gap automatically */
+
+    background: #fff;
+    z-index: 998;
+
+    border-radius: 12px;
+    padding: 0.9rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  }
+
+}
