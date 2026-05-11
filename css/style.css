@@ -1197,7 +1197,7 @@ a{
 }
 /* SECTION */
 .partners-new {
-  background: linear-gradient(to bottom, #f8f8f8, #ffffff);
+  background:  #f8f8f8;
 }
 
 /* LOGO BOX */
@@ -1358,4 +1358,76 @@ html{
   100% {
     opacity: 0;
   }
+}
+
+
+/* client logo start */
+.logo-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+    background: #F9F9F9;
+}
+.logo-track {
+    display: flex;
+    gap: 40px;
+}
+.logo-item{
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ background-color: #ffffff;
+ border-radius: 9px;
+ 
+}
+.logo-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.logo-slider:hover .logo-track {
+    animation-play-state: paused;
+}
+
+.logo-item {
+    width: 25vw; /* 4 logos in laptop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.logo-item img {
+    width: 70%;
+    max-height: 100px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.logo-item img:hover {
+    transform: scale(1.08);
+}
+
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .logo-item{
+        width: 100vw; /* 1 logo */
+    }
+
+    .logo-item img{
+        width: 60%;
+    }
+
 }
