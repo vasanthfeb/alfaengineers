@@ -1431,3 +1431,25 @@ html{
     }
 
 }
+
+/* ===========  new css */
+
+/* Laptop/Desktop Only */
+@media (min-width: 992px) {
+
+    .alfa-header .container-fluid{
+        display: flex;
+        align-items: center;
+    }
+
+    .alfa-header .navbar-collapse{
+        flex: 1;
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .alfa-header .alfa-nav{
+        margin: 0 auto !important;
+    }
+
+}
