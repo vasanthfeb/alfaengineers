@@ -823,28 +823,46 @@
     <script src="./js/script.js"></script>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function(){
-        if(window.innerWidth <= 991){
-            document.querySelectorAll(".dropdown-submenu > .dropdown-toggle").forEach(function(item){
-                item.addEventListener("click", function(e){
-                    e.preventDefault();
-                    let submenu = this.nextElementSibling;
+  document.addEventListener("DOMContentLoaded", function(){
+    if(window.innerWidth <= 991){
+        
+        // 1. Target all sub-menu toggles inside the main dropdown
+        document.querySelectorAll(".dropdown-submenu > .dropdown-toggle").forEach(function(item){
+            item.addEventListener("click", function(e){
+                
+                // FIXED: Main "Spare Parts" menu close aagாமல் thadukka idhu migavum mukkiyam!
+                e.preventDefault();
+                e.stopPropagation(); 
+                
+                let submenu = this.nextElementSibling;
 
-                    // Close other open submenus at the same level
-                    this.closest(".dropdown-menu").querySelectorAll(".dropdown-menu.show").forEach(function(menu){
+                // Close other open submenus at the same level (Optional clean layout)
+                let parentMenu = this.closest(".dropdown-menu");
+                if (parentMenu) {
+                    parentMenu.querySelectorAll(".dropdown-menu.show").forEach(function(menu){
                         if(menu !== submenu){
                             menu.classList.remove("show");
                         }
                     });
+                }
 
-                    // Toggle the targeted sub-menu layout dynamically
-                    submenu.classList.toggle("show");
-                });
+                // Toggle the targeted sub-menu layout dynamically
+                submenu.classList.toggle("show");
             });
-        }
-      });
-    </script>
+        });
+
+        // 2. Main "Spare Parts" click aagumpodhu sub-menu default collapse state-la irukka
+        document.getElementById("spareDd").addEventListener("click", function(){
+            let mainDropdown = this.nextElementSibling;
+            if (mainDropdown) {
+                mainDropdown.querySelectorAll(".dropdown-menu.show").forEach(function(openedSubmenu){
+                    openedSubmenu.classList.remove("show");
+                });
+            }
+        });
+    }
+  });
+</script>
 </body>
 </html>
 
-```
