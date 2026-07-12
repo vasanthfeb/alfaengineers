@@ -37,55 +37,95 @@
 
       <!-- MENU -->
       <div class="collapse navbar-collapse" id="alfaMainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 alfa-nav">
 
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 alfa-nav">
+              <li class="nav-item">
+                <a class="nav-link font_1 menu_font " href="./index.html">Home</a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link  font_1 menu_font" href="./index.html">Home</a>
-          </li>
+              <li class="nav-item">
+                <a class="nav-link font_1 menu_font " href="./about-us.html">About Us</a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link  font_1 menu_font" href="./about-us.html">About Us</a>
-          </li>
+              <!-- SPARE PARTS WITH TRIPLE SUB-MENU HOVER LAYOUT -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle font_1 menu_font" href="#" id="spareDd" data-bs-toggle="dropdown" aria-expanded="false">
+                  Spare Parts
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="spareDd">
+                  
+                  <!-- 1. HYDRAULIC PARTS WITH SUBMENUS -->
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item font_1 menu_font dropdown-toggle" href="./hydraulic-parts.html">
+                        Hydraulic Parts
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item font_1 menu_font active" href="./seal-kits.html">Seal Kits</a></li>
+                        <li><a class="dropdown-item font_1 menu_font" href="./hydraulic-motors.html">Hydraulic Pump Parts</a></li>
+                        <li><a class="dropdown-item font_1 menu_font" href="./hydraulic-cylinders.html">Floating Seal Groups</a></li>
+                        <!-- <li><a class="dropdown-item font_1 menu_font" href="./hydraulic-valves.html">Hydraulic Valves</a></li> -->
+                        <!-- <li><a class="dropdown-item font_1 menu_font" href="./hydraulic-hoses.html">Hydraulic Hoses</a></li> -->
+                        <!-- <li><a class="dropdown-item font_1 menu_font" href="./seal-kits.html">Seal Kits</a></li> -->
+                    </ul>
+                  </li>
+                  
+                  <!-- 2. FILTERS WITH SUBMENUS -->
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item font_1 menu_font dropdown-toggle" href="./filters.html">
+                        Filters
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item font_1 menu_font" href="./air-filters.html">Air Filters</a></li>
+                        <li><a class="dropdown-item font_1 menu_font" href="./oil-filters.html">Oil Filters</a></li>
+                        <li><a class="dropdown-item font_1 menu_font" href="./fuel-filters.html">Fuel Filters</a></li>
+                        <li><a class="dropdown-item font_1 menu_font" href="./hydraulic-filters.html">Hydraulic Filters</a></li>
+                    </ul>
+                  </li>
 
-          <!-- SPARE PARTS -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle font_1 menu_font" href="#" id="spareDd" data-bs-toggle="dropdown">
-              Spare Parts
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item font_1 menu_font active" href="./hydraulic-parts.html">Hydraulic Parts</a></li>
-              <li><a class="dropdown-item font_1 menu_font " href="./filters.html">Filters</a></li>
-              <li><a class="dropdown-item font_1 menu_font" href="./engine-cooling-parts.html">Engine & Cooling Parts</a></li>
-              <li><a class="dropdown-item font_1 menu_font" href="./electrical-parts.html">Electrical Parts</a></li>
-              <li><a class="dropdown-item font_1 menu_font" href="./ground-engaging-tools.html">Ground Engaging Tools</a></li>
-              <li><a class="dropdown-item font_1 menu_font" href="./grader-parts.html">Grader Parts</a></li>
-              <li><a class="dropdown-item font_1 menu_font" href="./rock-breakers-parts.html">Rock Breakers Parts</a></li>
-              <li><a class="dropdown-item font_1 menu_font" href="./mini-excavator-undercarriage.html">Mini Excavator Undercarriage</a></li>
-              <li><a class="dropdown-item font_1 menu_font" href="./miscellaneous-parts.html">Miscellaneous Parts</a></li>
+                  <!-- 3. ELECTRICAL PARTS WITH SUBMENUS -->
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item font_1 menu_font dropdown-toggle" href="./electrical-parts.html">
+                        Electrical Parts
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item font_1 menu_font" href="./alternators.html">Alternators</a></li>
+                        <li><a class="dropdown-item font_1 menu_font" href="./starter-motors.html">Starter Motors</a></li>
+                        <li><a class="dropdown-item font_1 menu_font" href="./sensors-switches.html">Sensors & Switches</a></li>
+                        <li><a class="dropdown-item font_1 menu_font" href="./solenoids-coils.html">Solenoids & Coils</a></li>
+                    </ul>
+                  </li>
+                  
+                  <!-- REST OF THE DIRECT PRODUCT ENTRIES -->
+                  <li><a class="dropdown-item font_1 menu_font" href="./engine-cooling-parts.html">Engine & Cooling Parts</a></li>
+                  <li><a class="dropdown-item font_1 menu_font" href="./ground-engaging-tools.html">Ground Engaging Tools</a></li>
+                  <li><a class="dropdown-item font_1 menu_font" href="./grader-parts.html">Grader Parts</a></li>
+                  <li><a class="dropdown-item font_1 menu_font" href="./rock-breakers-parts.html">Rock Breakers Parts</a></li>
+                  <li><a class="dropdown-item font_1 menu_font" href="./mini-excavator-undercarriage.html">Mini Excavator Undercarriage</a></li>
+                  <li><a class="dropdown-item font_1 menu_font" href="./miscellaneous-parts.html">Miscellaneous Parts</a></li>
+                </ul>
+              </li>
+
+              <!-- EQUIPMENTS -->
+              <li class="nav-item dropdown">
+                <a class="nav-link font_1 menu_font dropdown-toggle" href="#" id="equipDd" data-bs-toggle="dropdown" aria-expanded="false">
+                  Equipments
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="equipDd">
+                  <li><a class="dropdown-item font_1 menu_font" href="./excavators.html">Excavators</a></li>
+                  <li><a class="dropdown-item font_1 menu_font" href="./mini-excavators.html">Mini Excavators</a></li>
+                  <li><a class="dropdown-item font_1 menu_font" href="./motor-graders.html">Motor Graders</a></li>
+                  <li><a class="dropdown-item font_1 menu_font" href="./rock-breakers.html">Rock Breakers</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link font_1 menu_font " href="./contact-us.html">Contact Us</a>
+              </li>
+
             </ul>
-          </li>
+          </div>
 
-          <!-- EQUIPMENTS -->
-          <li class="nav-item dropdown">
-            <a class="nav-link font_1 menu_font dropdown-toggle" href="#" id="equipDd" data-bs-toggle="dropdown">
-              Equipments
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item font_1 menu_font" href="./excavators.html">Excavators</a></li>
-              <li><a class="dropdown-item font_1 menu_font" href="./mini-excavators.html">Mini Excavators</a></li>
-              <li><a class="dropdown-item font_1 menu_font" href="./motor-graders.html">Motor Graders</a></li>
-              <li><a class="dropdown-item font_1 menu_font" href="./rock-breakers.html">Rock Breakers</a></li>
-            </ul>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link font_1 menu_font " href="./contact-us.html">Contact Us</a>
-          </li>
-
-        </ul>
-
-      </div>
 <a class="navbar-brand me-lg-4" href="#">
         <img src="./assets/images/29.png" class="img-fluid img_29" style="max-height:80px;">
       </a>
@@ -105,36 +145,36 @@
 
 <main>
       <!-- section start -->
-     <section class="py-5 bg_container">
+     <section class="py-5 bg_containerqs">
   <div class="container ">
 
     <!-- TITLE -->
     <div class="text-center mb-5">
-      <h2 class="main-title font-2 caps text-dark">Seal Kits</h2>
+      <h2 class="main-title font-2 caps text-light">Seal Kits</h2>
     </div>
 
     <div class="row g-4">
 
       <!-- CARD 1 -->
       <div class="col-md-6 col-lg-4">
-        <div class="hyd-card">
+        <div class="hyd-card hey">
 
           <div class="icon-badge">
             <i class="fas fa-tools"></i>
           </div>
 
-          <img src="./assets/parts/Seal-Kits.webp">
+          <img src="./assets/parts/CylinderKits.jpg">
 
-          <div class="card-body">
-            <h4 class="font-2">Seal <span>Kits</span></h4>
-            <p class="c2">High-quality seal kits to prevent leakage and ensure smooth hydraulic system performance.</p>
+          <div class="card-body ">
+            <h4 class="font-2">Cylinder <span>Kits</span></h4>
+            <p class="c2">High-quality cylinder kits for reliable hydraulic performance</p>
 
             <hr>
 
             <ul>
-              <li>Excavator Hydraulic Seals</li>
-              <li>Piston & Rod Seals</li>
-              <li>Wear & Dust Seals</li>
+              <li>Hydraulic Cylinder Seal Kits</li>
+              <li>Boom, Arm & Bucket Cylinder Kits</li>
+              <li>Repair & Rebuild Kits</li>
             </ul>
           </div>
 
@@ -143,24 +183,24 @@
 
       <!-- CARD 2 -->
       <div class="col-md-6 col-lg-4">
-        <div class="hyd-card">
+        <div class="hyd-card hey">
 
           <div class="icon-badge">
             <i class="fas fa-cogs"></i>
           </div>
 
-          <img src="./assets/parts/Hydraulic-PumpParts.webp">
+          <img src="./assets/parts/CylinderKits.jpg">
 
-          <div class="card-body">
-            <h4 class="font-2">Hydraulic <span>Pump Parts</span></h4>
-            <p class="c2">Reliable pumps & swing motor parts for maximum power, efficiency & longevity.</p>
+          <div class="card-body ">
+            <h4 class="font-2">Hydraulic Pump <span>Kits</span></h4>
+            <p class="c2">High-quality pump kits for efficient hydraulic performance</p>
 
             <hr>
 
             <ul>
-              <li>Main Hydraulic Pumps</li>
-              <li>Swing Motor Assemblies</li>
-              <li>Pump Repair Kits</li>
+              <li>Hydraulic Pump Repair Kits</li>
+              <li>Pump Seal & Gasket Kits</li>
+              <li>Complete Rebuild Kits</li>
             </ul>
           </div>
 
@@ -169,24 +209,156 @@
 
       <!-- CARD 3 -->
       <div class="col-md-6 col-lg-4">
-        <div class="hyd-card">
+        <div class="hyd-card hey">
 
           <div class="icon-badge">
            <i class="fas fa-truck-monster"></i>
           </div>
 
-          <img src="./assets/parts/Floating-Seal-Groups.webp">
+          <img src="./assets/parts/CylinderKits.jpg">
 
-          <div class="card-body">
-            <h4 class="font-2">Floating <span>Seal Groups</span></h4>
-            <p class="c2">Precision-engineered floating seal groups for travel & swing device assemblies.</p>
+          <div class="card-body ">
+            <h4 class="font-2">Swing Motor <span> Kits</span></h4>
+            <p class="c2">High-quality swing motor kits for smooth and reliable performance</p>
 
             <hr>
 
             <ul>
-              <li>Floating Seals</li>
-              <li>Gear Box Seals</li>
-              <li>Complete Seal Groups</li>
+              <li>Swing Motor Seal Kits</li>
+              <li>Motor Repair Kits</li>
+              <li>Complete Rebuild Kits</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+
+
+        <div class="col-md-6 col-lg-4">
+        <div class="hyd-card hey">
+
+          <div class="icon-badge">
+           <i class="fas fa-truck-monster"></i>
+          </div>
+
+          <img src="./assets/parts/CylinderKits.jpg">
+
+          <div class="card-body ">
+            <h4 class="font-2">Travel Motor<span> Kits</span></h4>
+            <p class="c2">High-quality travel motor kits for powerful and reliable performance</p>
+
+            <hr>
+
+            <ul>
+              <li>Travel Motor Seal Kits</li>
+              <li>Motor Repair Kits</li>
+              <li>Complete Rebuild Kits</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+
+
+       <div class="col-md-6 col-lg-4">
+        <div class="hyd-card hey">
+
+          <div class="icon-badge">
+           <i class="fas fa-truck-monster"></i>
+          </div>
+
+          <img src="./assets/parts/CylinderKits.jpg">
+
+          <div class="card-body ">
+            <h4 class="font-2">Control Valve<span> Kits</span></h4>
+            <p class="c2">High-quality control valve kits for precise hydraulic performance</p>
+
+            <hr>
+
+            <ul>
+              <li>Control Valve Seal Kits</li>
+              <li>Valve Repair Kits</li>
+              <li>Complete Rebuild Kits</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+
+       <div class="col-md-6 col-lg-4">
+        <div class="hyd-card hey">
+
+          <div class="icon-badge">
+           <i class="fas fa-truck-monster"></i>
+          </div>
+
+          <img src="./assets/parts/CylinderKits.jpg">
+
+          <div class="card-body ">
+            <h4 class="font-2">O-Rings <span> </span></h4>
+            <p class="c2">High-quality O-rings for leak-proof hydraulic sealing.</p>
+
+            <hr>
+
+            <ul>
+              <li>Hydraulic O-Rings</li>
+              <li>Rubber O-Ring Sets</li>
+              <li>Industrial Sealing O-Rings</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-4">
+        <div class="hyd-card hey">
+
+          <div class="icon-badge">
+           <i class="fas fa-truck-monster"></i>
+          </div>
+
+          <img src="./assets/parts/CylinderKits.jpg">
+
+          <div class="card-body ">
+            <h4 class="font-2"> Pipeline <span>Orings </span></h4>
+            <p class="c2">High-quality pipeline O-rings for secure and leak-proof sealing.</p>
+
+            <hr>
+
+            <ul>
+              <li>Hydraulic Pipeline O-Rings</li>
+              <li>High-Pressure O-Rings</li>
+              <li>Industrial Sealing O-Rings</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+
+       <div class="col-md-6 col-lg-4">
+        <div class="hyd-card hey">
+
+          <div class="icon-badge">
+           <i class="fas fa-truck-monster"></i>
+          </div>
+
+          <img src="./assets/parts/CylinderKits.jpg">
+
+          <div class="card-body ">
+            <h4 class="font-2"> Oring  <span>Boxes </span></h4>
+            <p class="c2">High-quality O-ring boxes for organized and easy sealing solutions</p>
+
+            <hr>
+
+            <ul>
+              <li>Hydraulic O-Ring Assortment</li>
+              <li>Metric & Standard Sizes</li>
+              <li>Durable Storage Box</li>
             </ul>
           </div>
 
@@ -196,8 +368,40 @@
     </div>
 
   </div>
+
+  <div class="container py-5 ">
+
+    <h1 class="bg-light  text-center py-3 "style="color: #FC5208;">
+    <b><i>Seal Brands We Deal</i></b></h1>
+    <div class="row">
+      <div class="col-lg-3 mt-2">
+        <div class="logo-item">
+            <img src="./assets/logo/corteco.jpg" alt="">
+        </div>
+
+      
+      </div>
+      <div class="col-lg-3 mt-2">
+          <div class="logo-item">
+            <img src="./assets/logo/hallite.webp" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3 mt-2">
+          <div class="logo-item">
+            <img src="./assets/logo/nok.webp" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3 mt-2">
+          <div class="logo-item">
+            <img src="./assets/logo/parker.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
     <!-- section end -->
+
+    
 </main>
 
 
@@ -286,5 +490,47 @@
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
+
+       <script>
+  document.addEventListener("DOMContentLoaded", function(){
+    if(window.innerWidth <= 991){
+        
+        // 1. Target all sub-menu toggles inside the main dropdown
+        document.querySelectorAll(".dropdown-submenu > .dropdown-toggle").forEach(function(item){
+            item.addEventListener("click", function(e){
+                
+                // FIXED: Main "Spare Parts" menu close aagாமல் thadukka idhu migavum mukkiyam!
+                e.preventDefault();
+                e.stopPropagation(); 
+                
+                let submenu = this.nextElementSibling;
+
+                // Close other open submenus at the same level (Optional clean layout)
+                let parentMenu = this.closest(".dropdown-menu");
+                if (parentMenu) {
+                    parentMenu.querySelectorAll(".dropdown-menu.show").forEach(function(menu){
+                        if(menu !== submenu){
+                            menu.classList.remove("show");
+                        }
+                    });
+                }
+
+                // Toggle the targeted sub-menu layout dynamically
+                submenu.classList.toggle("show");
+            });
+        });
+
+        // 2. Main "Spare Parts" click aagumpodhu sub-menu default collapse state-la irukka
+        document.getElementById("spareDd").addEventListener("click", function(){
+            let mainDropdown = this.nextElementSibling;
+            if (mainDropdown) {
+                mainDropdown.querySelectorAll(".dropdown-menu.show").forEach(function(openedSubmenu){
+                    openedSubmenu.classList.remove("show");
+                });
+            }
+        });
+    }
+  });
+</script>
 </body>
 </html>
